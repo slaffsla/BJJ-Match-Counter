@@ -1,0 +1,34 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+         <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJJ Score</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <h2 id="score-id">0</h2>
+                <div class = "buttons">
+                    <button class = "btn" onclick = "homePlus1 ()">+1</button>
+                    <button class = "btn" onclick = "homePlus2 ()">+2</button>
+                    <button class = "btn" onclick = "homePlus4 ()">+4</button>
+                </div>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <h2 id="guest-score-id">0</h2>
+                <div class = "buttons">
+                    <button class = "btn" onclick = "guestPlus1 ()">+1</button>
+                    <button class = "btn" onclick = "guestPlus2 ()">+2</button>
+                    <button class = "btn" onclick = "guestPlus4 ()">+4</button>
+                </div>
+            </div>
+        </div>
+                <button id = "reset-btn" onclick="resetGame()">Reset Match</button>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
